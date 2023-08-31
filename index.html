@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios de JavaScript</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="miVentana" class="fondo">
+        <div class="ventana">
+            <span class="cerrar">&times;</span>
+            <h1>Bienvenidos!</h1><br>
+            <h2> Informacion:</h2><br>
+            <p> Para ver los resultados de cada contenedor, debe realizar la inspeccion y se notaran en la consola los resultado 👍</p>
+        </div>
+    </div>
+    <nav class="navbar" id="navbar">
+        <div class="logo">
+            <a href="">
+                <img src="./img/A.png" alt="" width="70px" height="70px">
+            </a>
+        </div>
+        <div class="tituloIntitucional">
+            <a href="https://edtecnica.com/" target="_blank"><h1 class="h1tituloInstitucional">EDTecnica</h1></a>
+        </div>
+        <div class="menu">
+            <ul class="navbarul">
+                <li class="navbarlist"><a href="https://github.com/dorian2023?tab=repositories" target="_blank">GitHub</a></li>
+                <li class="navbarlist"><a href="">Proyectos</a></li>
+                <li class="navbarlist"><a href="">Contactos</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="animate-charcter">
+        <h1 class="h1tituloJavascript">Ejercicios de JavaScript</h1>
+    </div>
+    <div class="number">
+        <h1 class="tituloNumbers blur-in-expand">NUMBERS</h1>
+        <div class="ejercicio1 blur-in-expand2">
+            <div class="numbers2">
+                <h2 class="h2ejercicio1">1.- Hallar el valor de dos numeros:</h2>
+                <p class="pejecicio1">const numero1 = 10;<br>
+                    const numero2 = 20;<br>
+                    <br>
+                    const numeroMaximo = Math.numeroMaximo(numero1, numero2);<br>
+                    <br>
+                    console.log("El número más grande es: " + numeroMaximo);
+                </p>
+            </div>        
+        </div>
+        <div class="ejercicio1 blur-in-expand2">
+            <div class="numbers2">
+                <h2 class="h2ejercicio1">2.- Sumar, restar, multiplicar y dividir:</h2>
+                <div class="conjunto pejecicio1"> 
+                    <div class="sumar logica">
+                        <h3>Suma</h3>
+                        <p> let a = 5;<br>
+                            let b = 9;<br>
+                            let suma = a + b;<br>
+                            console.log("El resultado de la suma es: "+ suma); <br>
+                        </p>
+                    </div>
+                    <div class="resta logica">
+                        <h3>Resta</h3>
+                        <p> let a2 = 5;<br>
+                            let b2 = 9;<br>
+                            let resta = a2 - b2;<br>
+                            console.log("El resultado de la resta es: "+ resta); <br>
+                        </p>
+                    </div>
+                    <div class="multiplicacion logica">
+                        <h3>Multiplicacion</h3>
+                        <p> let a3 = 5;<br>
+                            let b3 = 9;<br>
+                            let resta = a3 * b3;<br>
+                            console.log("El resultado de la multiplicacion es: "+ multiplicacion); <br>
+                        </p>
+                    </div>
+                    <div class="division logica2">
+                        <h3>Division</h3>
+                        <p> let a4 = 5;<br>
+                            let b4 = 9;<br>
+                            let resta = a4 * b4;<br>
+                            console.log("El resultado de la division es: "+ division); <br>
+                        </p>
+                    </div>
+                </div>
+            </div>        
+        </div>
+        <div class="ejercicio1 blur-in-expand2">
+            <div class="numbers2">
+                <h2 class="h2ejercicio1">3.- Calcula la raiz cuadrada de los numeros agregados:</h2>
+                <p class="pejecicio1">let numeros = [20, 41, 12, 40, 27];<br>
+                        for (let i = 0; i < numeros.length; i++) {<br>
+                        let numero = numeros[i];<br>
+                        let raizCuadrada = Math.sqrt(numero);<br>
+                        console.log("La raíz cuadrada de "+ numero +" es "+ raizCuadrada);<br>
+                        };<br>
+                    </p>
+            </div>        
+        </div>
+    </div>
+    <div class="string">
+         <h1 class="tituloNumbers blur-in-expand">STRING</h1>
+        <div class="conjunto2">
+            <div class="ejercicio1 blur-in-expand2">
+                <div class="string2">
+                    <h2 class="h2ejercicio1">1.- Identificar la logintud de la cadena de texto agregada:</h2>
+                    <p class="pejecicio1">
+                        let texto = "Buenas tardes, mi nombre es Dorian Gonzalez. Alumno de Programacion Full-Stack de EDTecnica";<br>
+                        let longitud = texto.length;<br>
+                        console.log("La longitud de la cadena es: "+ longitud + " caracteres.");<br>
+                    </p>
+                </div>        
+            </div>
+            <div class="ejercicio1 blur-in-expand2">
+                <div class="string2">
+                    <h2 class="h2ejercicio1"> 2.- Invertir la cadena de texto: Hello - olleH </h2>
+                    <p class="pejecicio1">
+                        let texto2 = "Hello";<br>
+                        let textoInvertido = texto2.split("").reverse().join("");<br>
+                        console.log("El texto invertido es: " + textoInvertido);
+                    </p>
+                </div>        
+            </div>
+            <div class="ejercicio1 blur-in-expand2">
+                <div class="string2">
+                    <h2 class="h2ejercicio1"> 3.- Repetir el texto. </h2>
+                    <p class="pejecicio1">
+                        let texto3 = "Buenas tardes, mi nombre es Dorian Gonzalez. Alumno de Programacion Full-Stack de EDTecnica";<br>
+                        let repeticiones = 3;<br>
+                        let textoRepetido = texto3.repeat(repeticiones);<br>
+                        console.log("El texto repetido es: "+textoRepetido);<br>
+                    </p>
+                </div>        
+            </div>
+        </div>
+    </div>
+    <div class="arrays">
+        <h1 class="tituloNumbers blur-in-expand">ARRAYS</h1>
+        <div class="conjunto3">
+            <div class="ejercicio1 blur-in-expand2">
+                <div class="arrays2">
+                    <h2 class="h2ejercicio1">1.- Agregar valores al array al principio. ["Soy","Hola", "Juan"]:</h2>
+                    <p class="pejecicio1">
+                        let arreglo = ["Hola", "Soy", "Juan"];<br>
+                        arreglo.unshift("Buenos Buenas, ");<br>
+                        console.log(arreglo);
+                    </p>
+                </div>        
+            </div>
+            <div class="ejercicio1 blur-in-expand2">
+                <div class="arrays2">
+                    <h2 class="h2ejercicio1">2.- Revertir los valores por que tenga el array [1,2,3]:</h2>
+                    <p class="pejecicio1">
+                        let arreglo2 = [1, 2, 3];<br>
+                        arreglo2.reverse();<br>
+                        console.log(arreglo2);
+                    </p>
+                </div>        
+            </div>
+            <div class="ejercicio1 blur-in-expand2">
+                <div class="arrays2">
+                    <h2 class="h2ejercicio1">3.- Sumar todos los números del array: [1,2,3]:</h2>
+                    <p class="pejecicio1">
+                        let arreglo3 = [1, 2, 3];<br>
+                        let suma2 = 0;<br>
+                        for (let i = 0; i < arreglo3.length; i++) {<br>
+                            suma2 += arreglo3[i]; <br>
+                        }<br>
+                        console.log(suma2);
+                    </p>
+                </div>        
+            </div>
+        </div>
+    </div>
+    <div class="iteradores">
+        <h1 class="tituloNumbers blur-in-expand">ITERADORES</h1>
+        <div class="conjunto4">
+            <div class="ejercicio1 blur-in-expand2">
+                <div class="iteradores2">
+                    <h2  class="h2ejercicio1">1.- Muestrame los elementos del iterado</h2>
+                    <p class="pejecicio1">
+                        El método <b>next()</b>, el cual devuelve un objeto <br> con dos propiedades: <b>value y done</b>.
+                         <br>
+                        JavaScript proporciona diversas formas de iterar sobre una colección,<br> desde simples bucles <b>for</b> hasta métodos como <br> <b>map() y filter()</b>
+                    </p>
+                </div>
+            </div>  
+            <div class="ejercicio1 blur-in-expand2">
+                <div class="iteradores2">
+                    <h2 class="h2ejercicio1" >2.- Iterar un array de números y devolverme el valor * 2:</h2>
+                    <p class="pejecicio1">
+                        let numerosArreglo = [1, 2, 3, 4];<br>
+                        let numerosMultiplicados = multiplicarPorDos(numerosArreglo);<br>
+                        function multiplicarPorDos(arreglo5) {<br>
+                            return arreglo5.map(x => x * 2);<br>
+                        } <br>
+                        console.log(numerosMultiplicados); <br>
+                    </p>
+                </div>        
+            </div>    
+            <div class="ejercicio1 blur-in-expand2">
+                <div class="iteradores2">
+                    <h2 class="h2ejercicio1">3.- Mostrarme los índices del array que vas a iterar:</h2>
+                    <p class="pejecicio1">
+                        let numerosArreglo2 = [1, 2, 3, 4];<br>
+                        let numerosMultiplicados2 = multiplicarPorDos2(numerosArreglo2);<br>
+                         function multiplicarPorDos2(arreglo6) {<br>
+                            return arreglo6.map((x, i) => ({indice: i, valor: x * 2}));<br>
+                        } <br>
+                        console.log(numerosMultiplicados2);
+                    </p>
+                </div>        
+            </div>
+        </div>     
+    </div>
+    <footer class="contendor-footer">
+        <div class="footer-img">
+            <a href="">
+                <img src="./img/grafico-circular.png" alt="" width="50px" height="50px">
+            </a>
+        </div>
+        <div class="footer-p">
+            <p>Hecho por dorian2023 💻</p>
+            <p>Copyright 2023 - Todos los derechos reservados</p>
+        </div>
+        <div class="footer-contact">
+            <div class="github-icon">
+                <a href="https://github.com/dorian2023?tab=repositories" target="_blank"><img src="./img/icon-github.svg" alt="" class="img-iconos"></a>
+            </div>
+            <div class="instagram-icon">
+                <img src="./img/icon-instagram.svg" alt="" class="img-iconos">
+            </div>
+            <div class="twiter-icon">
+                <img src="./img/icon-twitter_squared.svg" alt="" class="img-iconos">
+            </div>    
+        </div>
+    </footer>
+    <script src="./index.js"></script>
+</body>
+</html>
